@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Jillportrait2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Jillportrait2.png" />
+  </ItemGroup>
+
 </Project>
