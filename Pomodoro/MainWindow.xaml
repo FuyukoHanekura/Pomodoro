@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Pomodoro" Height="350" Width="450" Background="#FF131313" Foreground="#FFE9E9E9" MinWidth="450" MinHeight="350" Icon="/Jillportrait2.png">
     <Grid>
-        <Label Content="25:00" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFEAEAEA" FontSize="48" Margin="0,0,0,60"/>
+        <Label x:Name="TimerLabel" Content="25:00" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFEAEAEA" FontSize="48" Margin="0,0,0,60"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,46,0,0" RenderTransformOrigin="0.5,0.5" Orientation="Horizontal" >
-            <Button Content="Start" Width="50"/>
-            <Button Content="Reset" Width="50" Margin="25,0,25,0"/>
-            <Button Content="Pause" Width="50"/>
+            <Button x:Name="StartBtn" Content="Start" Width="50" Click="OnStartBtn"/>
+            <Button Content="Reset" Width="50" Margin="25,0" Click="OnResetBtn"/>
+            <Button Content="Pause" Width="50" Click="OnPauseBtn"/>
         </StackPanel>
         <Grid/>
     </Grid>
